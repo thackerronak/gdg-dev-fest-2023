@@ -1,0 +1,13 @@
+<div class="editable-list">
+    <h3>{{heading}}</h3>
+    <ul *ngFor="let item of list; index as i;" class="item-list">
+        <li>{{item}}
+            <button class="editable-list-remove-item icon" (click)="removeItem(i)">⊖</button>
+        </li>
+    </ul>
+    <div>
+        <label>Add new list item:</label>
+        <input #inputVal class="add-new-list-item-input" type="text">
+        <button class="editable-list-add-item icon" (click)="addItem(inputVal.value)">⊕</button>
+    </div>
+</div>

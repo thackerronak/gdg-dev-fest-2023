@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <editable-list id="todo" heading="TODO Roank"></editable-list>
+  <editable-list id="todo1" heading="TODO Mukund"></editable-list>
+  <script>
+    
+    const todo = document.getElementById("todo");
+    todo.addEventListener("todoListUpdate", (e) => {
+      console.log(todo.getAttribute('heading'),e.detail);
+    });
+    const todo1 = document.getElementById("todo1");
+    todo1.addEventListener("todoListUpdate", (e) => {
+      console.log(todo1.getAttribute('heading'),e.detail);
+    });
+  </script>
+  <script src="./web-component/editable-list-component.js"></script>
+</body>
+
+</html>

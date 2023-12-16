@@ -1,6 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
+  standalone: true,
+  imports: [BrowserModule],
   selector: 'app-editable-list',
   templateUrl: './editable-list.component.html',
   styleUrls: ['./editable-list.component.scss'],

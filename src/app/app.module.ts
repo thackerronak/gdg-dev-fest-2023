@@ -4,8 +4,8 @@ import { AppComponent } from './app.component';
 import { EditableListComponent } from './editable-list/editable-list.component';
 
 @NgModule({
-  declarations: [AppComponent, EditableListComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, EditableListComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

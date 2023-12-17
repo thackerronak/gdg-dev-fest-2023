@@ -9,19 +9,18 @@
 </head>
 
 <body>
+  <!-- Declare custom element -->
   <editable-list id="todo" heading="TODO Roank"></editable-list>
-  <editable-list id="todo1" heading="TODO Mukund"></editable-list>
+  
+  <!-- Subscribe custom element event via eventListener -->
   <script>
-    
     const todo = document.getElementById("todo");
     todo.addEventListener("todoListUpdate", (e) => {
       console.log(todo.getAttribute('heading'),e.detail);
     });
-    const todo1 = document.getElementById("todo1");
-    todo1.addEventListener("todoListUpdate", (e) => {
-      console.log(todo1.getAttribute('heading'),e.detail);
-    });
   </script>
+
+  <!-- Editable list component script added  -->
   <script src="./web-component/editable-list-component.js"></script>
 </body>
 
